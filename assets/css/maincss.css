@@ -66,6 +66,33 @@ h6 {
   z-index: 100;
 }
 
+.logobox{
+  position: absolute;
+  left: 100px;
+
+  cursor: pointer;
+
+  transition: 0.1s all linear;
+}
+
+.navbox{
+  position: absolute;
+  right: 100px;
+}
+
+.nav-menu{
+  margin-top: 4px;
+  margin-left: 15px;
+
+  width: auto;
+  height: 50px;
+
+  cursor: pointer;
+}
+.nav-menu:hover{
+  fill: red;
+}
+
 .fixed{
   position: fixed;
 }
@@ -83,14 +110,7 @@ h6 {
 
 
 /*header*/
-.logobox{
-  position: absolute;
-  right: 100px;
 
-  cursor: pointer;
-
-  transition: 0.1s all linear;
-}
 
 .logo1{
   position: absolute;
