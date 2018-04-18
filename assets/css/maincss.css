@@ -78,6 +78,12 @@ h6 {
 .navbox{
   position: absolute;
   right: 100px;
+  width: auto;
+}
+
+.navbox-home{
+  right: 100px;
+  width: 80px;
 }
 
 .nav-menu{
@@ -88,9 +94,13 @@ h6 {
   height: 50px;
 
   cursor: pointer;
+
+  transition: 0.2s all;
 }
-.nav-menu:hover{
-  fill: red;
+
+.logobox:hover,.nav-menu:hover{
+  opacity: .4;
+  transform: translate(-2px,-2px);
 }
 
 .fixed{
@@ -99,6 +109,42 @@ h6 {
 
 /* end header */
 
+
+/* polaroid */
+.img-box{
+  width: 12.5%;
+  height: 200px;
+  position: relative;
+  float: left;
+}
+.img-hover{
+  width: 100%;
+  height: 100%;
+  background-color: pink;
+
+  transition: 0.3s;
+}
+.img-box:hover{
+  z-index: 10;
+}
+.img-box:hover .img-hover{
+  transform: scale(1.2);
+  z-index: 10;
+}
+
+/* end-polaroid */
+
+/* development */
+.development-img{
+  position: relative;
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: 33.33%;
+  height: 100vh;
+  transition: 1s;
+}
+/* end development */
 
 .bodytext{
   position: relative;
@@ -116,7 +162,6 @@ h6 {
   position: absolute;
   width: auto;
   height: 110px;
-
 }
 
 .logoname{
@@ -634,9 +679,6 @@ li{
 
 #page-2{
   position: relative;
-  overflow-x: hidden;
-  width: 100%;
-
   box-sizing: border-box;
   z-index: 10;
 
@@ -663,66 +705,13 @@ li{
 }
 
 .section6{
-  padding-top: 120px;
-  padding-bottom: 120px;
+
 }
 
 .section7{
   padding-top: 20px;
   padding-bottom: 20px;
 }
-
-.portfolio-section{
-
-}
-
-.portfolio-filters{
-  text-align: center;
-  display: inline-block;
-  margin-bottom: 40px;
-}
-
-.portfolio-box{
-  position: relative;
-  height: auto;
-  padding: 0;
-  display: table;
-  content: " ";
-}
-
-.portfolio-item{
-  float: left;
-  margin: 20px;
-}
-
-.portfolio-item-img{
-  position: relative;
-  transition: 0.3s;
-}
-
-
-.portfolio-item-img:hover{
-
-  filter: drop-shadow(8px 8px 0px rgba(92,202,232,1)) drop-shadow(-8px -8px 0px rgba(92,202,232,1));
-  z-index: 10;
-}
-
-.portfolio-item-img:hover .img-hover{
-  opacity: 1;
-}
-
-img.img-hover {
-  backface-visibility: hidden;
-  position: absolute;
-  opacity: 0;
-}
-
-
-
-.portfolio-item-img:after{
-
-}
-
 
 .container{
   padding-right: 15px;
@@ -853,6 +842,7 @@ p{
   background: black;
   overflow-x: hidden;
   text-align: center;
+  width: 100%;
 }
 
 .footer-text{

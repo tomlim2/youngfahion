@@ -24,36 +24,42 @@ $(document).ready(function(){
             });
       });
 
-    $(window).scroll(function(){
-      var num = $(window).scrollTop();
-          $(".logospinning").css({
-            "transform": "rotate("+ num/2 + "deg)",
-            });
-
-      });
 
     $(".logobox").click(function(){
       $("html, body").animate({
         scrollTop: $("#page").offset().top
       },1100);
     })
-    $("#bttn-project").click(function(){
-      $("html, body").animate({
-        scrollTop: $("#portfolio-section").offset().top
-      },1100);
+
+    $(".di1").click(function(){
+      $(this).css({
+        "width": '3000px',
+      });
+    });
+    $(".di2").click(function(){
+      $(this).css({
+        "width": '3000px',
+      });
+    })
+    $(".di3").click(function(){
+      $(this).css({
+        "width": '3000px',
+      });
     })
 
-
     var getRandomColor = function(){
-      var color2 = ["#F48583","#D5E59F","#5ccae8"];
-      var randomColor = Math.floor(Math.random() * 3);
+      var color2 = ["#b3a3ca","#f080ae","#F48583","#D5E59F","#5ccae8","#f7f061","#d8d1c7"];
+      var randomColor = Math.floor(Math.random() * 7);
       return color2[randomColor];
     };
 
+    $(".img-hover").css({
+      "background": getRandomColor,
+    });
 
-
-
-    $(".footers").append("(C) TOM LIM 2018");
+    $(".randomcolor").css({
+      "background": getRandomColor,
+    });
 
 
 });
