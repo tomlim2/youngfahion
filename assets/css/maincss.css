@@ -104,13 +104,15 @@ a:active {
   height: 220px;
   position: relative;
   float: left;
+
+  transition: 0.4s all;
 }
 .img-hover{
   width: 100%;
   height: 100%;
   overflow: hidden;
 
-  transition: 0.3s;
+  transition: 0.4s all;
 }
 .img-polaroid{
   width: auto;
@@ -126,7 +128,8 @@ a:active {
 }
 
 .img-box:hover{
-  z-index: 10;
+  z-index: 100;
+
 }
 .img-box:hover .img-hover{
   transform: scale(1.2);
@@ -218,7 +221,14 @@ a:active {
 
 /* about */
 .about-page{
-  padding: 120px 100px 0px 100px;
+  padding: 120px 100px 100px 100px;
+}
+#body-title{
+  padding-left: 14px;
+}
+.bodytext{
+  padding-left: 40%;
+  padding-right: 12%;
 }
 /* end about */
 
@@ -284,45 +294,6 @@ a:active {
 
 }
 
-#pics{
-  width: 300px;
-  height: auto;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-#mv1115{
-  position: relative;
-  width: 300px;
-  height: auto;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-#mv1120{
-  position: relative;
-  width: 300px;
-  height: auto;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-#mv1116{
-  position: relative;
-  width: 240px;
-  height: auto;
-  margin-top: 10px;
-  margin-left: -120px;
-  left: 50%;
-  margin-bottom: 10px;
-}
-#mv1117{
-  position: relative;
-  width: 240px;
-  height: auto;
-  margin-top: 10px;
-  margin-left: -120px;
-  left: 50%;
-  margin-bottom: 10px;
-}
 
 .column2{
   position: relative;
@@ -336,102 +307,6 @@ a:active {
   position: relative;
   float: left;
 }
-.c1st{
-}
-.c2rd{
-  margin-left: 10px;
-}
-
-#pics2L{
-  width: 300px;
-  height: auto;
-  margin-bottom: 5px;
-}
-
-#pics2R{
-  width: 300px;
-  height: auto;
-
-  margin-bottom: 5px;
-}
-
-#pics2C{
-  width: 300px;
-  height: auto;
-
-  margin-bottom: 5px;
-}
-
-#pics2C2{
-  width: 180px;
-  height: auto;
-  position: relative;
-  left: 50%;
-  margin-left: -90px;
-  margin-bottom: 5px;
-}
-
-#pics2C3{
-  width: 210px;
-  height: auto;
-  position: relative;
-  left: 50%;
-  margin-left: -105px;
-  margin-bottom: 5px;
-}
-
-#picsMobile{
-  width: 180px;
-  height: auto;
-  position: relative;
-  left: 50%;
-  margin-left: -90px;
-  transition: 0.3s all;
-  margin-top: 10px;
-  margin-bottom: 20px;
-}
-
-#picsMobile:hover{
-  transform: rotate(-2deg);
-}
-
-#picsMobile2{
-  width: 180px;
-  height: auto;
-  position: relative;
-  left: 50%;
-  margin-left: -480px;
-  transition: 0.3s all;
-  margin-top: -10px;
-}
-
-#picsMobile2:hover{
-  transform: rotate(-2deg);
-}
-
-
-#iframe1{
-  position: relative;
-  width: 900px;
-  height: 700px;
-  left: 50%;
-  margin-left: -452px;
-  transform: scale(.34);
-  transform-origin: 450px 0px;
-  margin-bottom: -450px;
-}
-
-#pics3{
-  width: 150px;
-  height: auto;
-  margin-left: -4px;
-  margin-bottom: -4px;
-}
-
-#textexppj2sp{
-  margin-bottom: 20px;
-}
-
 
 @media screen and (min-width: 900px) {
   .headerNavbox{
@@ -469,69 +344,6 @@ a:active {
     margin-bottom: 60px;
   }
 
-  #mv1115{
-    width: 630px;
-    height: auto;
-  }
-
-  #mv1120{
-    width: 630px;
-    height: auto;
-  }
-
-  #mv1117{
-    width: 480px;
-    margin-left: -240px;
-  }
-
-  #pics{
-    width: 630px;
-
-  }
-
-  .column2{
-    width: 630px;
-  }
-
-  #pics2L{
-    width: 310px;
-  }
-
-  #pics2R{
-    width: 310px;
-    margin-left: 5px;
-  }
-
-  #pics2C{
-    width: 630px;
-  }
-
-  #pics2C2{
-    width: 240px;
-    margin-left: -120px;
-  }
-  #pics2C3{
-    width: 310px;
-    margin-left: -155px;
-  }
-
-  #picsMobile{
-    width: 270px;
-    margin-left: -135px;
-  }
-  #picsMobile2{
-    width: 270px;
-    margin-left: -640px
-  }
-  #iframe1{
-    transform: scale(.6);
-    margin-left: -450px;
-    margin-bottom: -280px;
-  }
-  #pics3{
-    width: 210px;
-  }
-
 
 }
 @media screen and (min-width: 1200px) {
@@ -549,20 +361,6 @@ a:active {
   .column1{
     width: 990px;
     margin-left: -495px;
-  }
-  .tvmode{
-    width: 480px;
-    height: 320px;
-    margin-left: 6px;
-    margin-right: 6px;
-  }
-  #thumbnail{
-    width: 480px;
-    height: 320px;
-    animation-play-state: paused;
-  }
-  #pics3{
-    width: 210px;
   }
 }
 
@@ -655,8 +453,6 @@ li{
   overflow-x: hidden;
   overflow-y: hidden;
   width: 100%;
-
-  background: #00c8aa;
 }
 
 #page-2{

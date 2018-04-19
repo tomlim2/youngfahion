@@ -73,7 +73,7 @@ $(document).ready(function(){
 
 
     var getRandomColor = function(){
-      var color2 = ["#b3a3ca","#f080ae","#F48583","#D5E59F","#5ccae8","#f7f061","#d8d1c7","#e184b9","#f29222"];
+      var color2 = ["#94cee4","#d5eddd","#f3ef8e","#d0e2f0","#b5b4d6","#edbfdc","#fcc8cc","#f7c7c5","#faf26d"];
       var randomColor = Math.floor(Math.random() * 9);
       return color2[randomColor];
     };
