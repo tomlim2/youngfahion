@@ -311,53 +311,31 @@ a:active {
 
 /* zoo */
 .img-zoo-box{
-  position: absolute;
-  left: 20%;
-  top: 5%;
+  position: relative;
+  left: 100px;
+  top: 15vh;
 
-  transform: scale(0.8);
+  width: 1080px;
+  height: 520px;
+
+
+  overflow: scroll;
 }
 
+.img-zoo-box-inside{
+  position: relative;
+
+  width: 29340px;  
+  height: 520px;
+
+}
 .img-zoo{
-  position: absolute;
-  overflow: hidden;
-}
-.img-zoo1{
-  width: 500px;
-  height: 300px;
-
-  top: 100px;
-  left: 0px;
-}
-#img-zoo-1{
+  position: relative;
+  float: left;
   height: 100%;
-  transform: translate(-30px, 0px);
+  margin: 0;
 }
-#img-zoo-2{
-  height: 100%;
-  transform: translate(-30px, 0px);
-}
-.img-zoo2{
-  width: 300px;
-  height: 400px;
 
-  left: 520px;
-  top: 0px;
-}
-.img-zoo3{
-  width: 340px;
-  height: 340px;
-
-  left: 140px;
-  top: 420px;
-}
-.img-zoo4{
-  width: 500px;
-  height: 300px;
-
-  left: 500px;
-  top: 420px;
-}
 
 /* end zoo */
 
