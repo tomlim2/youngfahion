@@ -71,18 +71,18 @@ $(document).ready(function(){
 
     $(".di1").click(function(){
       $(this).css({
-        "width": '3000px',
+        "width": '14000px',
         "cursor": "inherit",
       });
       $(".di2,.di3").css({
-        "left": '3000px',
+        "left": '14000px',
         "width": '0px',
       });
     });
 
     $(".di2").click(function(){
       $(this).css({
-        "width": '3000px',
+        "width": '7800px',
         "left": '0px',
         "cursor": "inherit",
       });
@@ -90,14 +90,14 @@ $(document).ready(function(){
         "left": '-33.33%',
       });
       $(".di3").css({
-        "left": '3000px',
+        "left": '7800px',
         "width": '0px',
       });
     })
 
     $(".di3").click(function(){
       $(this).css({
-        "width": '3000px',
+        "width": '100%',
         "left": '0px',
         "cursor": "inherit",
       });

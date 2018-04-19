@@ -274,10 +274,12 @@ a:active {
   padding: 0;
   width: 33.33%;
   height: 100vh;
-  transition: 0.3s linear all;
+  transition: 1s all;
   top: 0px;
   cursor: pointer;
-  opacity: 0.6;
+
+
+  overflow: hidden;
 }
 
 .development-img:hover{
@@ -292,6 +294,17 @@ a:active {
 }
 .di3{
   left: 66.66%;
+}
+.di-img-1{
+  position: relative;
+  float: left;
+  height: 100vh;
+
+  margin-right: 20px;
+}
+.di-img-3{
+  position: relative;
+  height: 100vh;
 }
 /* end development */
 
