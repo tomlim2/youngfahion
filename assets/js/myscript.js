@@ -29,7 +29,45 @@ $(document).ready(function(){
       $("html, body").animate({
         scrollTop: $("#page").offset().top
       },1100);
-    })
+    });
+
+// mainpage hover
+    $(".nm1").mouseenter(function(){
+      $(".main-hover-imgs").addClass("hover-development");
+    });
+
+    $(".nm1").mouseleave(function(){
+      $(".main-hover-imgs").removeClass("hover-development");
+    });
+
+
+    $(".nm2").mouseenter(function(){
+      $(".main-hover-imgs").addClass("hover-zoo");
+    });
+
+    $(".nm2").mouseleave(function(){
+      $(".main-hover-imgs").removeClass("hover-zoo");
+    });
+
+
+    $(".nm3").mouseenter(function(){
+      $(".main-hover-imgs").addClass("hover-polaroid");
+    });
+
+    $(".nm3").mouseleave(function(){
+      $(".main-hover-imgs").removeClass("hover-polaroid");
+    });
+
+
+    $(".nm4").mouseenter(function(){
+      $(".main-hover-imgs").addClass("hover-aboutme");
+    });
+
+    $(".nm4").mouseleave(function(){
+      $(".main-hover-imgs").removeClass("hover-aboutme");
+    });
+
+// end mainpage hover
 
     $(".di1").click(function(){
       $(this).css({
@@ -78,9 +116,9 @@ $(document).ready(function(){
       return color2[randomColor];
     };
 
-    $(".img-hover").css({
-      "background": getRandomColor,
-    });
+    // $(".img-hover").css({
+    //   "background": getRandomColor,
+    // });
 
     $(".randomcolor").css({
       "background": getRandomColor,
