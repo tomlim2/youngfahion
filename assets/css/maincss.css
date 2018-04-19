@@ -4,12 +4,7 @@ body {
   font-family: adobe-caslon-pro, serif;
   font-style: normal;
   font-weight: 700;
-  color: black;
-
   margin: 0px;
-
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
 }
 
 
@@ -29,31 +24,6 @@ a:active {
     background-color: hotpink;
 }
 
-
-h1{
-
-}
-
-
-
-h2{
-
-}
-
-h3 {
-
-}
-
-h4 {
-
-}
-
-h5 {
-
-}
-h6 {
-
-}
 
 /* end general */
 
@@ -100,7 +70,7 @@ h6 {
 
 .logobox:hover,.nav-menu:hover{
   opacity: .4;
-  transform: translate(-2px,-2px);
+  transform: translate(1px,1px);
 }
 
 .fixed{
@@ -136,15 +106,75 @@ h6 {
 
 /* development */
 .development-img{
-  position: relative;
-  float: left;
+  position: absolute;
   margin: 0;
   padding: 0;
   width: 33.33%;
   height: 100vh;
-  transition: 1s;
+  transition: 0.3s linear all;
+  top: 0px;
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+.development-img:hover{
+  opacity: 1;
+}
+
+.di1{
+  left: 0px;
+}
+.di2{
+  left: 33.33%;
+}
+.di3{
+  left: 66.66%;
 }
 /* end development */
+
+
+/* zoo */
+.img-zoo-box{
+  position: absolute;
+  left: 20%;
+  top: 5%;
+
+  transform: scale(0.8);
+}
+
+.img-zoo{
+  position: absolute;
+}
+.img-zoo1{
+  width: 400px;
+  height: 300px;
+
+  top: 100px;
+  left: 0px;
+}
+.img-zoo2{
+  width: 300px;
+  height: 400px;
+
+  left:420px;
+  top: 0px;
+}
+.img-zoo3{
+  width: 340px;
+  height: 340px;
+
+  left: 140px;
+  top: 420px;
+}
+.img-zoo4{
+  width: 500px;
+  height: 300px;
+
+  left: 500px;
+  top: 420px;
+}
+
+/* end zoo */
 
 .bodytext{
   position: relative;
@@ -168,19 +198,6 @@ h6 {
   right: -0.5px;
 }
 
-.logospinning{
-
-}
-
-
-
-.headerNavbox{
-
-
-}
-
-
-
 
 .footers{
   text-align: right;
@@ -200,39 +217,6 @@ h6 {
 /*end/*/
 
 /*1stindex*/
-
-
-.columnBox{
-  width: 10px;
-  height: 120px;
-  position: relative;
-}
-
-.column0{
-  position: relative;
-  width: 300px;
-  left: 50%;
-  margin-left: -150px;
-}
-
-.column1{
-  position: relative;
-  width: 300px;
-  left: 50%;
-  margin-left: -150px;
-  margin-top: 30px;
-}
-
-#bio{
-  /*background-color: #183432;*/
-  /*color: white;*/
-}
-
-.columnBio{
-  margin-top: -2px;
-  padding-top: 40px;
-  padding-bottom: 40px;
-
 
 
   /* width: 300px; */
@@ -695,19 +679,6 @@ li{
   background-color: rgba(92,202,232,1);
 }
 
-#bttn-project{
-  text-decoration: underline;
-  cursor: pointer;
-}
-#bttn-project:hover{
-  background-color: rgba(92,202,232,1);
-  color: black;
-}
-
-.section6{
-
-}
-
 .section7{
   padding-top: 20px;
   padding-bottom: 20px;
@@ -829,9 +800,6 @@ p{
     position: absolute;
     top: 0;
     left: 0;
-}
-:before,:after{
-      box-sizing: border-box;
 }
 
 #about-section{

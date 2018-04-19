@@ -34,22 +34,47 @@ $(document).ready(function(){
     $(".di1").click(function(){
       $(this).css({
         "width": '3000px',
+        "cursor": "inherit",
+      });
+      $(".di2,.di3").css({
+        "left": '3000px',
+        "width": '0px',
       });
     });
+
     $(".di2").click(function(){
       $(this).css({
         "width": '3000px',
+        "left": '0px',
+        "cursor": "inherit",
       });
-    })
-    $(".di3").click(function(){
-      $(this).css({
-        "width": '3000px',
+      $(".di1").css({
+        "left": '-33.33%',
+      });
+      $(".di3").css({
+        "left": '3000px',
+        "width": '0px',
       });
     })
 
+    $(".di3").click(function(){
+      $(this).css({
+        "width": '3000px',
+        "left": '0px',
+        "cursor": "inherit",
+      });
+      $(".di1").css({
+        "left": '-33.33%',
+      });
+      $(".di2").css({
+        "left": '-33.33%',
+      });
+    })
+
+
     var getRandomColor = function(){
-      var color2 = ["#b3a3ca","#f080ae","#F48583","#D5E59F","#5ccae8","#f7f061","#d8d1c7"];
-      var randomColor = Math.floor(Math.random() * 7);
+      var color2 = ["#b3a3ca","#f080ae","#F48583","#D5E59F","#5ccae8","#f7f061","#d8d1c7","#e184b9","#f29222"];
+      var randomColor = Math.floor(Math.random() * 9);
       return color2[randomColor];
     };
 
