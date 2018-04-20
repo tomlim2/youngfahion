@@ -119,7 +119,7 @@ a:active {
 
 .fixed{
   position: absolute;
-  top: 4700px
+  top: 4680px
 }
 
 /* end header */
@@ -306,12 +306,14 @@ a:active {
   height: 100vh;
 
   margin-right: 20px;
+
+  transition: 1s all;
 }
 .di-img-3{
   position: relative;
   height: 100vh;
-
-  margin:
+  margin-left: -420px;
+  transition: 1s all;
 }
 /* end development */
 
@@ -350,10 +352,14 @@ a:active {
 .about-page{
   padding: 120px 100px 100px 100px;
 }
+
 #body-title{
-  padding-left: 14px;
+  color: #93272d;
+  padding-left: 16px;
 }
+
 .bodytext{
+  color: #93272d;
   padding-left: 40%;
   padding-right: 12%;
 }
@@ -418,20 +424,33 @@ li{
   float: left;
 }
 .col-sm-60{
-  
+
   width: 60%;
   position: relative;
 
   float: left;
 }
 
+/* contact */
 
-
-#footer-section{
-  height: 385px;
+#contact-section{
+  height: 540px;
 
   background-color: white;
 }
+
+.fish-img{
+  transform-origin: top middle;
+  padding-left:120px;
+  height: 540px;
+}
+.copyright{
+  margin-top: 140px;
+  width:620px;
+
+}
+
+/* end contact */
 
 .footer{
 

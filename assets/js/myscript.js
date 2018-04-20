@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  var scrlls1img= 4700;
+  var scrlls1img= 4680;
 
   $(window).scroll(function(){
     var num = $(window).scrollTop();
@@ -100,6 +100,9 @@ $(document).ready(function(){
         "width": '100%',
         "left": '0px',
         "cursor": "inherit",
+      });
+      $(".di-img-3").css({
+        "margin-left": '0px',
       });
       $(".di1").css({
         "left": '-33.33%',
