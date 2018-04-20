@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  var scrlls1img= 0;
+  var scrlls1img= 4700;
 
   $(window).scroll(function(){
     var num = $(window).scrollTop();
@@ -82,7 +82,7 @@ $(document).ready(function(){
 
     $(".di2").click(function(){
       $(this).css({
-        "width": '7800px',
+        "width": '6800px',
         "left": '0px',
         "cursor": "inherit",
       });
@@ -109,6 +109,29 @@ $(document).ready(function(){
       });
     })
 
+    // end hover_development
+
+    // aboutme
+    var username = 'hongzeweimala',
+        // token = '1362124742.3ad74ca.6df307b8ac184c2d830f6bd7c2ac5644',
+        num_photos = 10;
+
+    $.ajax({
+        url: 'https://api.instagram.com/v1/users/self/media/recent',
+        dataType: 'jsonp',
+        type: 'GET',
+        data: {access_token: token, count: num_photos},
+        success: function(data){
+            console.log(data);
+            for( x in data.data ){
+                $('ul').append('<li><img src="'+data.data[x].images.low_resolution.url+'"></li>');
+            }
+        },
+        error: function(data){
+            console.log(data);
+        }
+    });
+    // end aboutme
 
     var getRandomColor = function(){
       var color2 = ["#94cee4","#d5eddd","#f3ef8e","#d0e2f0","#b5b4d6","#edbfdc","#fcc8cc","#f7c7c5","#faf26d"];
