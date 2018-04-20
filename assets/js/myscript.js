@@ -69,48 +69,111 @@ $(document).ready(function(){
 
 // end mainpage hover
 
-    $(".di1").click(function(){
-      $(this).css({
-        "width": '14000px',
-        "cursor": "inherit",
+    $(".di31").mouseenter(function(){
+      $(".di311").css({
+        "opacity": '1',
       });
-      $(".di2,.di3").css({
-        "left": '14000px',
-        "width": '0px',
+      $(".di32,.di33,.di34,.di35,.di36").css({
+        "opacity": '0',
+      });
+    });
+    $(".di31").mouseleave(function(){
+      $(".di311").css({
+        "opacity": '0',
+      });
+      $(".di32,.di33,.di34,.di35,.di36").css({
+        "opacity": '1',
       });
     });
 
-    $(".di2").click(function(){
-      $(this).css({
-        "width": '6800px',
-        "left": '0px',
-        "cursor": "inherit",
-      });
-      $(".di1").css({
-        "left": '-33.33%',
-      });
-      $(".di3").css({
-        "left": '7800px',
-        "width": '0px',
-      });
-    })
 
-    $(".di3").click(function(){
-      $(this).css({
-        "width": '100%',
-        "left": '0px',
-        "cursor": "inherit",
+    $(".di32").mouseenter(function(){
+      $(".di312").css({
+        "opacity": '1',
       });
-      $(".di-img-3").css({
-        "margin-left": '0px',
+      $(".di31,.di33,.di34,.di35,.di36").css({
+        "opacity": '0',
       });
-      $(".di1").css({
-        "left": '-33.33%',
+    });
+    $(".di32").mouseleave(function(){
+      $(".di312").css({
+        "opacity": '0',
       });
-      $(".di2").css({
-        "left": '-33.33%',
+      $(".di31,.di33,.di34,.di35,.di36").css({
+        "opacity": '1',
       });
-    })
+    });
+
+    $(".di33").mouseenter(function(){
+      $(".di313").css({
+        "opacity": '1',
+      });
+      $(".di31,.di32,.di34,.di35,.di36").css({
+        "opacity": '0',
+      });
+    });
+    $(".di33").mouseleave(function(){
+      $(".di313").css({
+        "opacity": '0',
+      });
+      $(".di31,.di32,.di34,.di35,.di36").css({
+        "opacity": '1',
+      });
+    });
+
+    $(".di34").mouseenter(function(){
+      $(".di314").css({
+        "opacity": '1',
+      });
+      $(".di31,.di32,.di33,.di35,.di36").css({
+        "opacity": '0',
+      });
+    });
+    $(".di34").mouseleave(function(){
+      $(".di314").css({
+        "opacity": '0',
+      });
+      $(".di31,.di32,.di33,.di35,.di36").css({
+        "opacity": '1',
+      });
+    });
+
+    $(".di35").mouseenter(function(){
+      $(".di315").css({
+        "opacity": '1',
+      });
+      $(".di31,.di32,.di33,.di34,.di36").css({
+        "opacity": '0',
+      });
+    });
+    $(".di35").mouseleave(function(){
+      $(".di315").css({
+        "opacity": '0',
+      });
+      $(".di31,.di32,.di33,.di34,.di36").css({
+        "opacity": '1',
+      });
+    });
+
+    $(".di36").mouseenter(function(){
+      $(".di316").css({
+        "opacity": '1',
+
+      });
+      $(".di31,.di32,.di33,.di34,.di35").css({
+        "opacity": '0',
+      });
+    });
+    $(".di36").mouseleave(function(){
+      $(".di316").css({
+        "opacity": '0',
+
+      });
+      $(".di31,.di32,.di33,.di34,.di35").css({
+        "opacity": '1',
+      });
+    });
+
 
     // end hover_development
 
