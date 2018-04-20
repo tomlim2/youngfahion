@@ -1,5 +1,6 @@
 $(document).ready(function(){
   var scrlls1img= 4680;
+  var scrlls2img= 4580;
 
   $(window).scroll(function(){
     var num = $(window).scrollTop();
@@ -9,6 +10,16 @@ $(document).ready(function(){
         $(".headerNav").removeClass("fixed");
       }
     });
+
+    $(window).scroll(function(){
+      var num = $(window).scrollTop();
+        if(num>scrlls2img){
+          $(".main-hover-imgs, .main-hover-imgs-link").addClass("fixed2");
+        }else{
+          $(".main-hover-imgs, .main-hover-imgs-link").removeClass("fixed2");
+        }
+      });
+
     $(window).scroll(function(){
       var num = $(window).scrollTop();
           $(".logoC").css({
@@ -34,6 +45,14 @@ $(document).ready(function(){
 // mainpage hover
     $(".nm1").mouseenter(function(){
       $(".main-hover-imgs").addClass("hover-development");
+      $(".mhil-img1").css({
+        "opacity": '1',
+        "z-index": '2',
+      });
+      $(".mhil-img2,.mhil-img3,.mhil-img4").css({
+        "opacity": '0',
+        "z-index": '0',
+      });
     });
 
     $(".nm1").mouseleave(function(){
@@ -41,8 +60,17 @@ $(document).ready(function(){
     });
 
 
+
     $(".nm2").mouseenter(function(){
       $(".main-hover-imgs").addClass("hover-zoo");
+      $(".mhil-img2").css({
+        "opacity": '1',
+        "z-index": '2',
+      });
+      $(".mhil-img1,.mhil-img3,.mhil-img4").css({
+        "opacity": '0',
+        "z-index": '0',
+      });
     });
 
     $(".nm2").mouseleave(function(){
@@ -52,6 +80,14 @@ $(document).ready(function(){
 
     $(".nm3").mouseenter(function(){
       $(".main-hover-imgs").addClass("hover-polaroid");
+      $(".mhil-img3").css({
+        "opacity": '1',
+        "z-index": '2',
+      });
+      $(".mhil-img1,.mhil-img2,.mhil-img4").css({
+        "opacity": '0',
+        "z-index": '0',
+      });
     });
 
     $(".nm3").mouseleave(function(){
@@ -61,6 +97,14 @@ $(document).ready(function(){
 
     $(".nm4").mouseenter(function(){
       $(".main-hover-imgs").addClass("hover-aboutme");
+      $(".mhil-img4").css({
+        "opacity": '1',
+        "z-index": '2',
+      });
+      $(".mhil-img1,.mhil-img2,.mhil-img3").css({
+        "opacity": '0',
+        "z-index": '0',
+      });
     });
 
     $(".nm4").mouseleave(function(){
