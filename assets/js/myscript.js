@@ -1,6 +1,6 @@
 $(document).ready(function(){
-  var scrlls1img= 4680;
-  var scrlls2img= 4580;
+  var scrlls1img= 4080;
+  var scrlls2img= 3980;
 
   $(window).scroll(function(){
     var num = $(window).scrollTop();
