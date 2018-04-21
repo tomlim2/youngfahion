@@ -440,9 +440,7 @@ a:active {
 }
 
 .development-img-box{
-  width: 8000px;
-  transform: translateX(0px);
-  animation: appearprss 2s forwards;
+  padding-top: 20px;
 }
 
 @keyframes appearprss {
@@ -460,11 +458,9 @@ a:active {
 .di1{
   left: 0px;
   overflow: scroll;
+
 }
 
-.di2{
-  left: 33.33%;
-}
 .di3{
   left: 0;
 }
@@ -1395,6 +1391,7 @@ a:active {
     left: 620px;
   }
   .development-img-box{
+    padding: 0;
     width: 16000px;
   }
   .development-img-box3{
