@@ -45,14 +45,8 @@ $(document).ready(function(){
 // mainpage hover
     $(".nm1").mouseenter(function(){
       $(".main-hover-imgs").addClass("hover-development");
-      $(".mhil-img1").css({
-        "opacity": '1',
-        "z-index": '2',
-      });
-      $(".mhil-img2,.mhil-img3,.mhil-img4").css({
-        "opacity": '0',
-        "z-index": '0',
-      });
+      $(".mhil-img1").fadeIn();
+      $(".mhil-img2,.mhil-img3,.mhil-img4").fadeOut();
     });
 
     $(".nm1").mouseleave(function(){
@@ -63,14 +57,8 @@ $(document).ready(function(){
 
     $(".nm2").mouseenter(function(){
       $(".main-hover-imgs").addClass("hover-zoo");
-      $(".mhil-img2").css({
-        "opacity": '1',
-        "z-index": '2',
-      });
-      $(".mhil-img1,.mhil-img3,.mhil-img4").css({
-        "opacity": '0',
-        "z-index": '0',
-      });
+      $(".mhil-img2").fadeIn();
+      $(".mhil-img1,.mhil-img3,.mhil-img4").fadeOut();
     });
 
     $(".nm2").mouseleave(function(){
@@ -80,14 +68,8 @@ $(document).ready(function(){
 
     $(".nm3").mouseenter(function(){
       $(".main-hover-imgs").addClass("hover-polaroid");
-      $(".mhil-img3").css({
-        "opacity": '1',
-        "z-index": '2',
-      });
-      $(".mhil-img1,.mhil-img2,.mhil-img4").css({
-        "opacity": '0',
-        "z-index": '0',
-      });
+      $(".mhil-img3").fadeIn();
+      $(".mhil-img1,.mhil-img2,.mhil-img4").fadeOut();
     });
 
     $(".nm3").mouseleave(function(){
@@ -97,14 +79,8 @@ $(document).ready(function(){
 
     $(".nm4").mouseenter(function(){
       $(".main-hover-imgs").addClass("hover-aboutme");
-      $(".mhil-img4").css({
-        "opacity": '1',
-        "z-index": '2',
-      });
-      $(".mhil-img1,.mhil-img2,.mhil-img3").css({
-        "opacity": '0',
-        "z-index": '0',
-      });
+      $(".mhil-img4").fadeIn();
+      $(".mhil-img1,.mhil-img2,.mhil-img3").fadeOut();
     });
 
     $(".nm4").mouseleave(function(){

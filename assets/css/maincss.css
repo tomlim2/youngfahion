@@ -5,18 +5,23 @@ body {
   font-style: normal;
   font-weight: 700;
   margin: 0;
-  padding: 0;
+
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
 
   background-color: #d8c2d5;
 }
 
+div{
+  margin: 0px;
+  padding: 0px;
+}
 
 
 a{
   text-decoration: none;
   transition: all 0.2s;
   transform-origin: center;
-  color: #183432;
 }
 
 a:hover{
@@ -28,10 +33,54 @@ a:active {
 }
 
 
+#page{
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  width: 100%;
+}
+
+
+#page-2{
+  position: relative;
+  overflow-x: hidden;
+  width: 100%;
+
+  box-sizing: border-box;
+  z-index: 10;
+
+}
+
+.container{
+  margin-right: auto;
+  margin-left: auto;
+
+  display: table;
+}
+
 /* end general */
 
-/* header */
 
+
+/* hovers */
+.hovers{
+
+
+  margin-right: auto;
+  margin-left: auto;
+}
+/* end hovers */
+
+/* header */
+.headerNav{
+  position: fixed;
+  width: 1280px;
+  padding-top: 16px;
+  z-index: 100;
+
+  left: 50%;
+  margin-left: -640px;
+}
 .namebox{
   width: 170px;
   height: auto;
@@ -41,16 +90,11 @@ a:active {
   top: 71vh;
 }
 
-.headerNav{
-  position: fixed;
-  width: 100%;
-  padding-top: 16px;
-  z-index: 100;
-}
+
 
 .logo{
   width: auto;
-  height: 50px;
+  height: 62px;
   fill: #95272B;
   transition: 0.1s all;
 }
@@ -66,14 +110,13 @@ a:active {
   cursor: pointer;
 
   transition: 0.1s all linear;
-
-
 }
 
 .main-pg-logobox{
   left: 225px;
   top: 23.5vh;
 }
+
 
 .navbox{
   position: absolute;
@@ -95,7 +138,7 @@ a:active {
   margin-left: 15px;
 
   width: auto;
-  height: 50px;
+  height: 70px;
   fill:#95272B;
 
   cursor: pointer;
@@ -128,14 +171,14 @@ a:active {
 
 .main-hero-img{
   position: absolute;
-  width: 600px;
-  height: 400px;
+  width: 750px;
+  height: 500px;
 
   top: 50vh;
   left: 50%;
 
-  margin-left: -300px;
-  margin-top: -200px;
+  margin-left: -375px;
+  margin-top: -250px;
 
   background-image: url("../imgs/mainpage/main_pg1_1.jpg");
   background-position: center;
@@ -221,20 +264,19 @@ a:active {
   width: 200px;
   height: 300px;
   position: absolute;
-
+  z-index: 2;
 }
 
 .mhil-img1{
   top: 8%;
   right: 12%;
-  opacity: 0;
+  display: none;
 }
 
 .mhil-img2{
   top: 2%;
   right: 8%;
-
-  opacity: 0;
+  display: none;
 }
 
 .mhil-i2-1{
@@ -248,7 +290,7 @@ a:active {
 }
 
 .mhil-img3{
-  opacity: 0;
+  display: none;
 }
 
 .mhil-i3-1{
@@ -265,7 +307,7 @@ a:active {
   top: 20%;
   left: -6%;
 
-  opacity: 0;
+  display: none;
 }
 
 /* img-hover-ori */
@@ -439,7 +481,12 @@ a:active {
 
 .development-img-box3{
   position: absolute;
+  left: 50%;
   bottom: 400px;
+
+  width: 1280px;
+
+  margin-left: -640px;
 }
 
 .di-img-3{
@@ -524,13 +571,15 @@ a:active {
 
 /* zoo */
 .img-zoo-box{
-  position: relative;
-  left: 100px;
-  top: 15vh;
+  position: absolute;
+
+  top: 17vh;
 
   width: 1080px;
   height: 520px;
+  left: 50%;
 
+  margin-left: -540px;
 
   overflow: scroll;
 }
@@ -603,20 +652,8 @@ li{
   list-style-type: none;
 }
 
-#page{
-  position: relative;
-  overflow-x: hidden;
-  overflow-y: hidden;
-  width: 100%;
 
-  padding: 0;
-}
 
-#page-2{
-  position: relative;
-  box-sizing: border-box;
-  z-index: 10;
-}
 
 .col-sm-6{
   float: left;
@@ -637,33 +674,45 @@ li{
 }
 
 .col-sm-40{
-  width: 40%;
-  position: relative;
+  width: 45%;
   float: left;
+  height: 540px;
 }
+
 .col-sm-60{
-  width: 60%;
-  position: relative;
+  width: 50%;
   float: left;
 }
 
 /* contact */
 
 #contact-section{
-  height: 540px;
   background-color: white;
 }
 
 .fish-img{
-  transform-origin: top middle;
+
   padding-left:120px;
   height: 540px;
+}
+.contact{
+  padding-top: 120px;
+  fill:#93272D;
+  padding-left:10px;
+  width:580px;
 }
 .copyright{
   padding-left: 20px;
   margin-top: 130px;
   width: 620px;
 
+}
+.email{
+  cursor: pointer;
+  display: block;
+}
+.email:hover{
+  fill: #88b186;
 }
 
 /* end contact */
@@ -679,6 +728,14 @@ li{
 }
 @media screen and (min-width: 1200px) {
 }
-@media screen and (min-width: 1800px) {
-
+@media screen and (min-width: 1300px) {
+  .img-zoo-box{
+    top: 22vh;
+  }
+  .di3{
+    height: 74vh;
+  }
+  .development-img-box{
+    width: 11300px;
+  }
 }
