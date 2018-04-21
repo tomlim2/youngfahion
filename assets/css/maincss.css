@@ -367,8 +367,8 @@ a:active {
 
 /* polaroid */
 .img-box{
-  width: 12.5vw;
-  height: 12.5vw;
+  width: 33.33vw;
+  height: 33.33vw;
   position: relative;
   float: left;
 
@@ -440,7 +440,7 @@ a:active {
 }
 
 .development-img-box{
-  padding-top: 20px;
+
 }
 
 @keyframes appearprss {
@@ -457,7 +457,7 @@ a:active {
 
 .di1{
   left: 0px;
-  overflow: scroll;
+
 
 }
 
@@ -465,9 +465,11 @@ a:active {
   left: 0;
 }
 .di-img-1{
+  margin-top: 10px;
   position: relative;
   float: left;
-  height: 80vh;
+  width: 100%;
+  height: auto;
 
 }
 
@@ -523,33 +525,20 @@ a:active {
 
 /* zoo */
 .img-zoo-box{
-  position: absolute;
 
-  width: 1080px;
-  height: 520px;
-  left: 50%;
-  top: 50vh;
-
-  margin-left: -540px;
-  margin-top: -260px;
-
-  overflow: scroll;
 }
 
 .img-zoo-box-inside{
-  position: relative;
 
-  width: 30130px;
-  height: 520px;
-
-  animation: appearprss 2s forwards;
 }
 
 
 .img-zoo{
   position: relative;
   float: left;
-  height: 100%;
+  width: 100%;
+  height: auto;
+
   margin: 0;
 }
 
@@ -563,18 +552,18 @@ a:active {
 }
 
 .about-page{
-  padding: 120px 100px 100px 100px;
+  padding-top: 300px;
 }
 
 #body-title{
   color: #93272d;
-  padding-left: 16px;
+  padding-left: 40%;
 }
 
 .bodytext{
   color: #93272d;
   padding-left: 40%;
-  padding-right: 12%;
+  padding-right: 5%;
 
   z-index: 1;
 }
@@ -1100,9 +1089,12 @@ a:active {
     left: 0;
   }
   .di-img-1{
+    margin-top: 0;
     position: relative;
     float: left;
+    width: auto;
     height: 80vh;
+
 
   }
 
@@ -1234,6 +1226,7 @@ a:active {
     position: relative;
     float: left;
     height: 100%;
+    width: auto;
     margin: 0;
   }
 
