@@ -64,8 +64,6 @@ a:active {
 
 /* hovers */
 .hovers{
-
-
   margin-right: auto;
   margin-left: auto;
 }
@@ -447,18 +445,19 @@ a:active {
 
 .development-img-box{
   width: 10000px;
-  transform: translateX(900px);
-  animation: appearprss 1s forwards;
+  transform: translateX(0px);
+  animation: appearprss 2s forwards;
 }
 @keyframes appearprss {
   0%{
-    transform: translateX(900px);
+    transform: translateX(0px);
   }
   100%{
-    transform: translateX(-200px);
+    transform: translateX(-700px);
   }
 
 }
+
 
 
 .di1{
@@ -492,7 +491,7 @@ a:active {
 .di-img-3{
   position: absolute;
 
-  height: 480px;
+  height: 58vh;
 
   transition: 0.3s all;
   cursor: pointer;
@@ -506,12 +505,14 @@ a:active {
   transform: scale(1.1);
 }
 
+
+
 .di-img-31{
   position: absolute;
 
   z-index: 8;
   transition: 0.3s all;
-  height: 520px;
+  height: 60vh;
 }
 
 .di31{
@@ -590,7 +591,10 @@ a:active {
   width: 30130px;
   height: 520px;
 
+  animation: appearprss 2s forwards;
 }
+
+
 .img-zoo{
   position: relative;
   float: left;
@@ -729,13 +733,37 @@ li{
 @media screen and (min-width: 1200px) {
 }
 @media screen and (min-width: 1300px) {
+  .headerNav{
+    padding-top: 36px;
+  }
+
   .img-zoo-box{
-    top: 22vh;
+    top: 20vh;
+
+    width: 1280px;
+    height: 720px;
+
+    margin-left: -640px;
+
+    overflow: scroll;
+  }
+
+  .img-zoo-box-inside{
+    height: 720px;
   }
   .di3{
     height: 74vh;
   }
+  .di315{
+    left: 300px;
+  }
+  .di316{
+    left: 560px;
+  }
   .development-img-box{
-    width: 11300px;
+    width: 16000px;
+  }
+  .development-img-box3{
+    bottom: 500px;
   }
 }
