@@ -478,6 +478,8 @@ a:active {
 
 }
 
+/* portfolio section */
+
 .development-img-box3{
   position: absolute;
   left: 50%;
@@ -519,16 +521,16 @@ a:active {
   left: 20px;
 }
 .di311{
-  left: 180px;
-  top: -70px;
+  left: 140px;
+  top: -40px;
   opacity: 0;
 }
 .di32{
   left: 200px;
 }
 .di312{
-  left: 340px;
-  top: -70px;
+  left: 330px;
+  top: -50px;
   opacity: 0;
 }
 .di33{
@@ -536,14 +538,14 @@ a:active {
 }
 .di313{
   left: 530px;
-  top: -70px;
+  top: -60px;
   opacity: 0;
 }
 .di34{
   left: 540px;
 }
 .di314{
-  left: 100px;
+  left: 220px;
   top: -50px;
   opacity: 0;
 }
@@ -551,7 +553,7 @@ a:active {
   left: 840px;
 }
 .di315{
-  left: 360px;
+  left: 470px;
   top: -50px;
 
   opacity: 0;
@@ -560,12 +562,12 @@ a:active {
   left: 1040px;
 }
 .di316{
-  left: 620px;
+  left: 720px;
   top: -50px;
 
   opacity: 0;
 }
-
+/* end portfolio */
 
 /* end development */
 
@@ -574,13 +576,13 @@ a:active {
 .img-zoo-box{
   position: absolute;
 
-  top: 17vh;
-
   width: 1080px;
   height: 520px;
   left: 50%;
+  top: 50vh;
 
   margin-left: -540px;
+  margin-top: -260px;
 
   overflow: scroll;
 }
@@ -738,21 +740,39 @@ li{
   }
 
   .img-zoo-box{
-    top: 20vh;
-
     width: 1280px;
-    height: 720px;
+    height: 640px;
 
     margin-left: -640px;
+    margin-top: -320px;
 
     overflow: scroll;
   }
 
   .img-zoo-box-inside{
-    height: 720px;
+    width: 37080px;
+    height: 640px;
   }
   .di3{
     height: 74vh;
+  }
+  .di315{
+    left: 360px;
+  }
+  .di316{
+    left: 620px;
+  }
+  .development-img-box{
+    width: 16000px;
+  }
+  .development-img-box3{
+    bottom: 440px;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .di314{
+    left: 120px;
   }
   .di315{
     left: 300px;
@@ -764,6 +784,6 @@ li{
     width: 16000px;
   }
   .development-img-box3{
-    bottom: 500px;
+    bottom: 440px;
   }
 }
