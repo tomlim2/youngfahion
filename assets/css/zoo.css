@@ -1,0 +1,112 @@
+/*general*/
+
+body {
+  width:calc(100vw);
+}
+
+div {
+
+}
+
+
+a{
+
+}
+
+a:hover{
+
+}
+
+a:active {
+
+}
+
+
+
+/* zoo */
+
+.horizontal-img img{
+  position: relative;
+  float: left;
+  width: 100%;
+  margin: 0;
+
+}
+
+.copyright{
+
+}
+
+/* end zoo */
+
+
+@media screen and (min-width: 900px) {
+
+  body {
+    width:calc(780px*44.5);
+    height: 100vh;
+    overflow-y: hidden;
+  }
+/* zoo */
+
+
+.horizontal-scroll-wrapper{
+  position:absolute;
+
+  height:520px;
+  margin:0;
+  padding: 0;
+
+  overflow:scroll;
+  top: 50%;
+  transform:translateY(-260px);
+
+  z-index: 100;
+}
+
+.horizontal-img{
+
+}
+.horizontal-img img{
+  position: relative;
+  float: left;
+  width: 780px;
+  height: 520px;
+
+}
+
+
+  /* end zoo */
+
+}
+@media screen and (min-width: 1200px) {
+
+}
+@media screen and (min-width: 1300px) {
+
+  body {
+    width:calc(960px*44.5);
+  }
+
+  .horizontal-scroll-wrapper{
+    height:640px;
+
+    transform:rotate(-90deg) translateY(-640px);
+    transform-origin:right top;
+    z-index: 100;
+  }
+
+  .horizontal-img{
+    transform:translateY(-320px);
+    /* padding:100px 0 0 0; */
+  }
+  .horizontal-img img{
+    width: 960px;
+    height: 640px;
+  }
+
+}
+
+@media screen and (min-width: 1600px) {
+
+}

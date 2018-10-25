@@ -2,14 +2,14 @@ $(document).ready(function(){
   var scrlls1img= 4080;
   var scrlls2img= 3980;
 
-  $(window).scroll(function(){
-    var num = $(window).scrollTop();
-      if(num>scrlls1img){
-        $(".headerNav").addClass("fixed");
-      }else{
-        $(".headerNav").removeClass("fixed");
-      }
-    });
+    $(window).scroll(function(){
+      var num = $(window).scrollTop();
+        if(num>scrlls1img){
+          $(".headerNav").addClass("fixed");
+        }else{
+          $(".headerNav").removeClass("fixed");
+        }
+      });
 
     $(window).scroll(function(){
       var num = $(window).scrollTop();
@@ -43,6 +43,16 @@ $(document).ready(function(){
     });
 
 // mainpage hover
+    $(".nm5").mouseenter(function(){
+      $(".main-hover-imgs").addClass("hover-awc2018");
+      // $(".mhil-img1").fadeIn();
+      $(".mhil-img1,.mhil-img2,.mhil-img3,.mhil-img4").fadeOut();
+    });
+
+    $(".nm5").mouseleave(function(){
+      $(".main-hover-imgs").removeClass("hover-awc2018");
+    });
+
     $(".nm1").mouseenter(function(){
       $(".main-hover-imgs").addClass("hover-development");
       $(".mhil-img1").fadeIn();
@@ -87,112 +97,115 @@ $(document).ready(function(){
       $(".main-hover-imgs").removeClass("hover-aboutme");
     });
 
+
+
+
 // end mainpage hover
 
-    $(".di31").mouseenter(function(){
-      $(".di311").css({
-        "opacity": '1',
-      });
-      $(".di32,.di33,.di34,.di35,.di36").css({
-        "opacity": '0',
-      });
-    });
-    $(".di31").mouseleave(function(){
-      $(".di311").css({
-        "opacity": '0',
-      });
-      $(".di32,.di33,.di34,.di35,.di36").css({
-        "opacity": '1',
-      });
-    });
-
-
-    $(".di32").mouseenter(function(){
-      $(".di312").css({
-        "opacity": '1',
-      });
-      $(".di31,.di33,.di34,.di35,.di36").css({
-        "opacity": '0',
-      });
-    });
-    $(".di32").mouseleave(function(){
-      $(".di312").css({
-        "opacity": '0',
-      });
-      $(".di31,.di33,.di34,.di35,.di36").css({
-        "opacity": '1',
-      });
-    });
-
-    $(".di33").mouseenter(function(){
-      $(".di313").css({
-        "opacity": '1',
-      });
-      $(".di31,.di32,.di34,.di35,.di36").css({
-        "opacity": '0',
-      });
-    });
-    $(".di33").mouseleave(function(){
-      $(".di313").css({
-        "opacity": '0',
-      });
-      $(".di31,.di32,.di34,.di35,.di36").css({
-        "opacity": '1',
-      });
-    });
-
-    $(".di34").mouseenter(function(){
-      $(".di314").css({
-        "opacity": '1',
-      });
-      $(".di31,.di32,.di33,.di35,.di36").css({
-        "opacity": '0',
-      });
-    });
-    $(".di34").mouseleave(function(){
-      $(".di314").css({
-        "opacity": '0',
-      });
-      $(".di31,.di32,.di33,.di35,.di36").css({
-        "opacity": '1',
-      });
-    });
-
-    $(".di35").mouseenter(function(){
-      $(".di315").css({
-        "opacity": '1',
-      });
-      $(".di31,.di32,.di33,.di34,.di36").css({
-        "opacity": '0',
-      });
-    });
-    $(".di35").mouseleave(function(){
-      $(".di315").css({
-        "opacity": '0',
-      });
-      $(".di31,.di32,.di33,.di34,.di36").css({
-        "opacity": '1',
-      });
-    });
-
-    $(".di36").mouseenter(function(){
-      $(".di316").css({
-        "opacity": '1',
-
-      });
-      $(".di31,.di32,.di33,.di34,.di35").css({
-        "opacity": '0',
-      });
-    });
-    $(".di36").mouseleave(function(){
-      $(".di316").css({
-        "opacity": '0',
-
-      });
-      $(".di31,.di32,.di33,.di34,.di35").css({
-        "opacity": '1',
-      });
-    });
+    // $(".di31").mouseenter(function(){
+    //   $(".di311").css({
+    //     "opacity": '1',
+    //   });
+    //   $(".di32,.di33,.di34,.di35,.di36").css({
+    //     "opacity": '0',
+    //   });
+    // });
+    // $(".di31").mouseleave(function(){
+    //   $(".di311").css({
+    //     "opacity": '0',
+    //   });
+    //   $(".di32,.di33,.di34,.di35,.di36").css({
+    //     "opacity": '1',
+    //   });
+    // });
+    //
+    //
+    // $(".di32").mouseenter(function(){
+    //   $(".di312").css({
+    //     "opacity": '1',
+    //   });
+    //   $(".di31,.di33,.di34,.di35,.di36").css({
+    //     "opacity": '0',
+    //   });
+    // });
+    // $(".di32").mouseleave(function(){
+    //   $(".di312").css({
+    //     "opacity": '0',
+    //   });
+    //   $(".di31,.di33,.di34,.di35,.di36").css({
+    //     "opacity": '1',
+    //   });
+    // });
+    //
+    // $(".di33").mouseenter(function(){
+    //   $(".di313").css({
+    //     "opacity": '1',
+    //   });
+    //   $(".di31,.di32,.di34,.di35,.di36").css({
+    //     "opacity": '0',
+    //   });
+    // });
+    // $(".di33").mouseleave(function(){
+    //   $(".di313").css({
+    //     "opacity": '0',
+    //   });
+    //   $(".di31,.di32,.di34,.di35,.di36").css({
+    //     "opacity": '1',
+    //   });
+    // });
+    //
+    // $(".di34").mouseenter(function(){
+    //   $(".di314").css({
+    //     "opacity": '1',
+    //   });
+    //   $(".di31,.di32,.di33,.di35,.di36").css({
+    //     "opacity": '0',
+    //   });
+    // });
+    // $(".di34").mouseleave(function(){
+    //   $(".di314").css({
+    //     "opacity": '0',
+    //   });
+    //   $(".di31,.di32,.di33,.di35,.di36").css({
+    //     "opacity": '1',
+    //   });
+    // });
+    //
+    // $(".di35").mouseenter(function(){
+    //   $(".di315").css({
+    //     "opacity": '1',
+    //   });
+    //   $(".di31,.di32,.di33,.di34,.di36").css({
+    //     "opacity": '0',
+    //   });
+    // });
+    // $(".di35").mouseleave(function(){
+    //   $(".di315").css({
+    //     "opacity": '0',
+    //   });
+    //   $(".di31,.di32,.di33,.di34,.di36").css({
+    //     "opacity": '1',
+    //   });
+    // });
+    //
+    // $(".di36").mouseenter(function(){
+    //   $(".di316").css({
+    //     "opacity": '1',
+    //
+    //   });
+    //   $(".di31,.di32,.di33,.di34,.di35").css({
+    //     "opacity": '0',
+    //   });
+    // });
+    // $(".di36").mouseleave(function(){
+    //   $(".di316").css({
+    //     "opacity": '0',
+    //
+    //   });
+    //   $(".di31,.di32,.di33,.di34,.di35").css({
+    //     "opacity": '1',
+    //   });
+    // });
 
 
     // end hover_development

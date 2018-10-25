@@ -1,0 +1,111 @@
+/*general*/
+
+body {
+  width: calc(53vh*8.4);
+  height: 100vh;
+  overflow-y: hidden;
+}
+#page-3{
+  position: relative;
+}
+#page-awc2018{
+  position: relative;
+}
+
+div {
+  box-sizing:border-box;
+}
+
+
+a{
+
+}
+
+a:hover{
+
+}
+
+a:active {
+
+}
+
+.headerNav{
+
+  z-index: 200;
+}
+
+/* awc mobile*/
+
+.awc2018-img{
+  position: relative;
+  float: left;
+  height: 90vh;
+
+}
+
+.awc2018-img-back{
+  height: 90vh;
+  z-index: 10;
+}
+
+/* awc 2018 */
+
+
+.awc2018-wrapper{
+  position:absolute;
+  display:block;
+
+  height: 90vh;
+  margin:0;
+  padding: 0;
+
+  z-index: 100;
+
+
+  bottom: 10px;
+
+}
+
+.awc2018-img-box{
+
+  /* padding:100px 0 0 0; */
+}
+.awc2018-wrapper .hover-ori{
+  width: 53vh;
+  height: 90vh;
+
+}
+
+.awc2018-wrapper .awc2018-mv1{
+  position: absolute;
+  left: 80vh;
+  bottom: -40px;
+  width: 75vh;
+  height: 75vh;
+
+}
+
+/* end awc 2018 */
+
+/* end awc mobile */
+
+
+@media screen and (min-width: 600px) {
+
+
+}
+
+
+@media screen and (min-width: 900px) {
+
+}
+@media screen and (min-width: 1200px) {
+
+}
+@media screen and (min-width: 1300px) {
+
+}
+
+@media screen and (min-width: 1600px) {
+
+}

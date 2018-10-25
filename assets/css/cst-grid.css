@@ -1,0 +1,46 @@
+/* grid-system by tl*/
+
+.col-sm-set{
+  position: relative;
+  float: left;
+}
+
+.col-sm-50{
+  width: 50%;
+}
+
+.col-sm-40{
+  width: 40%;
+}
+.col-sm-60{
+  width: 60%;
+}
+.col-sm-50-2, .col-sm-40-2, .col-sm-60-2{
+  width: 100%;
+}
+
+.ps-rl-ab{
+  position: absolute;
+}
+
+
+@media screen and (min-width: 900px) {
+
+  .col-sm-50-2{
+    width: 50%;
+  }
+
+  .col-sm-40-2{
+    width: 40%;
+  }
+
+  .col-sm-60-2{
+    width: 60%;
+  }
+
+  .ps-rl-ab{
+    position: relative;
+  }
+
+
+}
